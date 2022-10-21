@@ -5,14 +5,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import re
 import time
 
-# Put anime text here
-anime = "Futoku no Guild"
-
+# Open Animepahe Website
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://animepahe.com/")
 time.sleep(2)
+
+# Put anime text here
+anime = "Spy X Family"
 
 # Search anime 
 search = driver.find_element("name", "q")
@@ -29,3 +31,8 @@ try:
     time.sleep(2)
 except:
     print("Anime Not Found!");
+
+# Get the total number of Anime Episodes
+total_episode = driver.find_element(By.CLASS_NAME, "episode-count")
+num_episode = re.findall(r'[0-9]+', total_episode.text)
+print(num_episode[0])
