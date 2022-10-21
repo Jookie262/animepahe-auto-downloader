@@ -36,3 +36,7 @@ except:
 total_episode = driver.find_element(By.CLASS_NAME, "episode-count")
 num_episode = re.findall(r'[0-9]+', total_episode.text)
 print(num_episode[0])
+
+# Click Ascending Button
+ascending_btn = driver.find_element(By.ID, "episode_asc")
+ascending_btn.send_keys(Keys.ENTER)
