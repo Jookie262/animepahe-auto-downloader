@@ -40,3 +40,14 @@ print(num_episode[0])
 # Click Ascending Button
 ascending_btn = driver.find_element(By.ID, "episode_asc")
 ascending_btn.send_keys(Keys.ENTER)
+
+# Click First Episode
+try:
+    first_episode = WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((By.CLASS_NAME, "episode-list"))
+    )
+    first_episode_div = first_episode.find_element(By.TAG_NAME, "div").find_element(By.TAG_NAME, "a")
+    first_episode_div.send_keys(Keys.ENTER);
+    time.sleep(2)
+except:
+    print("First Episode Not Found");
