@@ -51,3 +51,7 @@ try:
     time.sleep(2)
 except:
     print("First Episode Not Found");
+
+# Click the download button
+download_btn = driver.find_element(By.ID, "downloadMenu")
+download_btn.send_keys(Keys.ENTER)
