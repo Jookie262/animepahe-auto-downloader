@@ -70,3 +70,15 @@ for choice in choices:
         choice.send_keys(Keys.ENTER)
 
 time.sleep(5)
+
+# Click Pahewin Continue button
+driver.switch_to.window(driver.window_handles[-1])
+driver.implicitly_wait(5)
+
+try:
+    countinue_vid = WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((By.LINK_TEXT, "Continue"))
+    )
+    countinue_vid.send_keys(Keys.ENTER)
+except:
+    print("Error");
