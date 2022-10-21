@@ -1,3 +1,5 @@
+from contextlib import nullcontext
+from symbol import continue_stmt
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager 
@@ -14,7 +16,10 @@ driver.get("https://animepahe.com/")
 time.sleep(2)
 
 # Put anime text here
-anime = "Spy X Family"
+anime = "Shingeki no Kyojin"
+
+# Type the quality of video here  
+pixels = "720"
 
 # Search anime 
 search = driver.find_element("name", "q")
@@ -55,3 +60,13 @@ except:
 # Click the download button
 download_btn = driver.find_element(By.ID, "downloadMenu")
 download_btn.send_keys(Keys.ENTER)
+
+# Click 720p Link
+dropdown_download = driver.find_element(By.ID, "pickDownload")
+choices = dropdown_download.find_elements(By.CLASS_NAME, "dropdown-item")
+
+for choice in choices:
+    if pixels + "p" in choice.text:
+        choice.send_keys(Keys.ENTER)
+
+time.sleep(5)
