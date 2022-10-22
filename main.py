@@ -82,3 +82,8 @@ try:
     countinue_vid.send_keys(Keys.ENTER)
 except:
     print("Error");
+
+# Click Download button in Kwik
+kwik_download_btn = driver.find_element(By.TAG_NAME, "button")
+kwik_download_btn.send_keys(Keys.ENTER)
+time.sleep(5)
