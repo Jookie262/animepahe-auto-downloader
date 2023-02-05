@@ -13,7 +13,7 @@ import time
 # Open Animepahe Website
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
-options.add_argument("start-maximized")
+options.add_argument("start-maximized") 
 options.add_extension('fdm.crx')
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 driver.get("https://animepahe.com/")
