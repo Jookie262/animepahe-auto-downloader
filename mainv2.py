@@ -136,7 +136,7 @@ for i in range(int(num_episode[0])):
             )
 
             if kwik_download_btn:
-                # kwik_download_btn.send_keys(Keys.ENTER)
+                kwik_download_btn.send_keys(Keys.ENTER)
                 print(f"Downloading Episode {i + 1}")
                 break
             else:
