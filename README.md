@@ -20,7 +20,8 @@ After downloading the prerequisites, you need to clone this project. Additionall
 ## **Video** 📹
 Here is the basic overview on how the project works
 
-![Video](files/vid.mp4)
+https://user-images.githubusercontent.com/62915062/218247826-287401b6-74b6-4902-b552-31112a94972f.mp4
+
 
 ## **Contribution** 🔥
 If you wish to help improve this project, fork this repo and submit your own pull request. If you discover a problem with this project, please report it to the issue page. Thank you very much   😊.
