@@ -1,5 +1,5 @@
 # **Animepahe Auto Downloader** 📥
-I have created a selenium-based Python project to automate the process of downloading anime from the Animepahe website. As an anime fan, I enjoy downloading my favorite shows and Animepahe is a fantastic source for both streaming and downloading anime, as they always compress the videos for better accessibility. While the project still has some bugs and is not the most efficient method, it does serve its purpose and makes downloading anime easier for me.
+I have created a selenium-based Python project to automate the process of downloading anime from the Animepahe website. As an anime fan, I enjoy downloading my favorite shows and Animepahe is a fantastic source for both streaming and downloading anime, as they always compress the videos for better accessibility. While the project still has some bugs, slow and is not the most efficient method, it does serve its purpose and makes downloading anime easier for me.
 
 ## **Prerequisites** ⚓
 - Google Chrome
@@ -9,13 +9,14 @@ I have created a selenium-based Python project to automate the process of downlo
 After downloading the prerequisites, you need to clone this project. Additionally, you need to check the "Start downloading without confirmation" in the settings of Free Download Manager.
 
 1. Clone the project
-2. Run mainv3.py
-3. Type the inputs needed
+2. Install the requirements needed
+3. Run mainv3.py
+4. Type the inputs needed
     - Name of the Anime
     - Pixels (720 or 1080)
     - Starting Episode
     - Ending Episode
-4. Sit back and relax while it is downloading
+5. Sit back and relax while it is downloading
 
 ## **Video** 📹
 Here is the basic overview on how the project works
